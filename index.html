@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Codeloccol|Pickme
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="nagios" content="NagiosFTW744" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/imgs/fav/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/imgs/fav/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/imgs/fav/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/imgs/fav/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/imgs/fav/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/imgs/fav/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/imgs/fav/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/imgs/fav/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/imgs/fav/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/imgs/fav/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/imgs/fav/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/imgs/fav/favicon-160x160.png"
+      sizes="160x160"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/imgs/fav/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <meta
+      name="keywords"
+      content="random, name selector, tombola, name picker"
+    />
+    <meta name="description" content="Random name selector" />
+    <meta name="Author" content="Primary Technology" />
+    <meta name="revisit-after" content="6 days" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <link media="all" type="text/css" rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #ffffff !important;
+      }
+    </style>
+  </head>
+
+  <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <div class="container">
+      <div class="row">
+        <div id="randomSearch">
+          <div id="ptBanner">
+            <!-- <a href="https://primaryt.co.uk" target="_blank">
+                  <img class="img img-responsive" src="/imgs/PrimaryT-Badge.png">
+                </a> -->
+          </div>
+          <div id="camel" class="row center">
+            <img
+              class="img"
+              title=""
+              style="width: 20%; height: auto; margin-top: 25px;"
+              src="codeloccol-logo.png"
+              id="camel"
+            />
+          </div>
+          <div class="col-md-12 center">
+            <h2
+              class="rfont"
+              style="font-family: Verdana, Geneva, sans-serif;"
+            ></h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="row center">
+              <span
+                id="changeName"
+                class="btn btn-lg btn-success rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Change Names</span
+              >
+              <span
+                id="save"
+                class="btn btn-lg btn-default rfont hidden"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Save and Share</span
+              >
+            </div>
+            <div class="row center pad-tb-10">
+              <form
+                class="form-inline rfont hidden"
+                style="font-family: Verdana, Geneva, sans-serif;"
+              >
+                Timer :
+                <select
+                  class="form-control rfont secondSelect"
+                  name="seconds"
+                  style="font-family: Verdana, Geneva, sans-serif;"
+                >
+                  <option value="1">1 Second</option>
+                  <option value="2">2 Seconds</option>
+                  <option value="3" selected="selected">3 Seconds</option>
+                  <option value="4">4 Seconds</option>
+                  <option value="5">5 Seconds</option>
+                  <option value="6">6 Seconds</option>
+                  <option value="7">7 Seconds</option>
+                </select>
+                <!-- Font : -->
+                <select
+                  id="fontControl"
+                  class="form-control rfont hidden"
+                  style="font-family: Verdana, Geneva, sans-serif;"
+                >
+                  <option
+                    data-value="1"
+                    style='font-family: "Arial, Helvetica, sans-serif"'
+                    value='"Arial, Helvetica, sans-serif"'
+                    >Arial
+                  </option>
+                  <option
+                    data-value="2"
+                    style='font-family:"Comic Sans MS", cursive'
+                    value='"Comic Sans MS", cursive'
+                    >Comic Sans
+                  </option>
+                  <option
+                    data-value="3"
+                    style="font-family: Georgia, serif"
+                    value="Georgia, serif"
+                    >Georgia
+                  </option>
+                  <option
+                    data-value="4"
+                    style='font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif'
+                    value='"Palatino Linotype", "Book Antiqua", Palatino, serif'
+                    >Palatino Linotype
+                  </option>
+                  <option
+                    data-value="5"
+                    style='font-family: "Times New Roman", Times, serif'
+                    value='"Times New Roman", Times, serif'
+                    >Times New Roman
+                  </option>
+                  <option
+                    data-value="6"
+                    style="font-family: Verdana, Geneva, sans-serif"
+                    value="Verdana, Geneva, sans-serif"
+                    selected=""
+                    >Verdana
+                  </option>
+                </select>
+              </form>
+            </div>
+            <div class="col-md-12">
+              <span
+                id="go"
+                class="btn btn-warning btn-lg rfont go-btn"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Go!</span
+              >
+            </div>
+            <div
+              id="valuesHolder"
+              class="hidden col-md-12 rfont pad-tb-10"
+              style="font-family: Verdana, Geneva, sans-serif;"
+            >
+              <textarea
+                id="values"
+                class="form-control rfont"
+                rows="10"
+                placeholder="Special characters are not allowed."
+                style="font-family: Verdana, Geneva, sans-serif;"
+              ></textarea>
+            </div>
+            <div id="saveHolder" class="hidden col-md-12 pad-tb-10 center">
+              <form
+                name="bitylink"
+                id="shorten"
+                class="form-group"
+                action="random-name-selector/shorten"
+                method="post"
+                data-remote=""
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="51wlQ8JUphqlWifVkeiIA39yICoe8JFIgRbklt9L"
+                />
+                <input type="hidden" name="url" />
+              </form>
+              <span
+                class="rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Short Shareable URL</span
+              >
+              <input
+                id="bitlyLink"
+                class="form-control rfont"
+                placeholder="Loading please wait..."
+                style="font-family: Verdana, Geneva, sans-serif;"
+              />
+              <span
+                class="rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Long Shareable URL</span
+              >
+              <input
+                id="shareLink"
+                class="form-control rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+              />
+              <span
+                class="rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+                >Embed Code</span
+              >
+              <input
+                id="embedCode"
+                class="form-control rfont"
+                style="font-family: Verdana, Geneva, sans-serif;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input
+      class="hidden"
+      name="save"
+      value="IIIwJg9grgNghgTwKYAIDScQRQSQLYBOcAdriEQBYBQoEYqASpgJbRUAiJKokUuYzFAGUIAc1QBZOBTh44vDnGhg4KAKLFmAawgIUACTgBnI8zgAXNoZjNeKI9DnN43FXitwC0YqoBysuFFPVBxyaWY8KhwwAmYTVQ1tXVRDaDgqKRk5OwAhT0RVHmgYFAB1aUwMiABjc08UAE0IYhsqJjlLWERJR29BISQETTbmapkCMBQAFQiIcwpUDGJsiAAvCCoheWgUAGEZLD4RKAAHCjNiJCopseYAMzvVAHEoCJBPbEyAhUMVo LBnJLigAPJyAibAF6EFQIxA1BbYgCDIVeHcQ7var1GHgthTD7o3glOCrZira63B7PV54d5eAzyMkWNhqGAIIxIVBqABuVxx XURjgzCuwAIQJUewWoh2OCRgieJHSwBg7j4UiBKE4pEVBHeDNiRE6NAxcCxBGmY2g5jGSoZJjMND DKBgiYzB8xqAA"
+    />
+    <input class="hidden" name="font" value="6" />
+    <input class="hidden" name="timer" value="3" />
+    <div id="resultsHolder" class="hidden"></div>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-8067573-11", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
